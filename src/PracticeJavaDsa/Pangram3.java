@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 public class Pangram3 {
     public static void main(String[] args) {

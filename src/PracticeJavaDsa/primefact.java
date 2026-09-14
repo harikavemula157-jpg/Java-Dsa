@@ -1,6 +1,8 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 
-public class primefact2 {
+public class primefact {
 
     public static void main(String[] args) {
 
@@ -11,16 +13,13 @@ public class primefact2 {
 
         System.out.print("Prime Factors: ");
 
-        for (int i = 2; i * i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
 
             while (n % i == 0) {
                 System.out.print(i + " ");
                 n = n / i;
             }
         }
-
-        if (n > 1)
-            System.out.print(n);
 
         sc.close();
     }

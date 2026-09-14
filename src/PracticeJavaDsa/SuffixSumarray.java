@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 public class SuffixSumarray {
     public static void main(String[] args) {

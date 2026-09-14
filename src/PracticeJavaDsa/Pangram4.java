@@ -1,15 +1,17 @@
-public class Pangram2 {
+package PracticeJavaDsa;
+
+public class Pangram4 {
     public static void main(String[] args) {
         String s = "The quick brown fox jumps over the lazy dog";
-        int[] freq = new int[26];
+        boolean[] visited = new boolean[26];
         for (char ch : s.toLowerCase().toCharArray()) {
             if (ch >= 'a' && ch <= 'z') {
-                freq[ch - 'a']++;
+                visited[ch - 'a'] = true;
             }
         }
         boolean pangram = true;
-        for (int value : freq) {
-            if (value == 0) {
+        for (boolean value : visited) {
+            if (!value) {
                 pangram = false;
                 break;
             }

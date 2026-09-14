@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.Scanner;
 
 public class PalReverse {

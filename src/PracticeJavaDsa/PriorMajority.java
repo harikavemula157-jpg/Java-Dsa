@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 public class PriorMajority {
     public static void main(String[] args) {

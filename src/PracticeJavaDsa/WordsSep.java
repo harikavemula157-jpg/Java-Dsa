@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.Scanner;
 public class WordsSep {
     public static void main(String[] args) {

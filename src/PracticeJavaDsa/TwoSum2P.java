@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 public class TwoSum2P {

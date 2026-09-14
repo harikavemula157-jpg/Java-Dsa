@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 public class Vowelno {
     public static void main(String[] args) {
         String s = "sky is blue fly high";

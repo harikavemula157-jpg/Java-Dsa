@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 public class Preefix {
     public static void main(String[] args) {

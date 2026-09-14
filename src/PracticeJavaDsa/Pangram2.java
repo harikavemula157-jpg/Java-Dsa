@@ -1,24 +1,21 @@
-import java.util.*;
-public class Pangram1 {
+package PracticeJavaDsa;
+
+public class Pangram2 {
     public static void main(String[] args) {
         String s = "The quick brown fox jumps over the lazy dog";
-        HashMap<Character,Boolean> map = new HashMap<>();
-        for (char ch = 'a'; ch <= 'z'; ch++) {
-            map.put(ch, false);
-        }
+        int[] freq = new int[26];
         for (char ch : s.toLowerCase().toCharArray()) {
             if (ch >= 'a' && ch <= 'z') {
-                map.put(ch, true);
+                freq[ch - 'a']++;
             }
         }
         boolean pangram = true;
-        for (boolean value : map.values()) {
-            if (!value) {
+        for (int value : freq) {
+            if (value == 0) {
                 pangram = false;
                 break;
             }
         }
-
         System.out.println(pangram ? "Pangram" : "Not Pangram");
     }
 }

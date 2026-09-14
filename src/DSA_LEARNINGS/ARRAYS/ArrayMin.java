@@ -1,3 +1,5 @@
+package DSA_LEARNINGS.ARRAYS;
+
 // MIN ELEMENT IN ARRAY
 public class ArrayMin {
     public static void main(String[] args) {

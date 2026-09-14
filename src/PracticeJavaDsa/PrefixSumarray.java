@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 public class PrefixSumarray {
     public static void main(String[] args) {

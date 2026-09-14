@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 import java.util.*;
 
 public class SumFormula {

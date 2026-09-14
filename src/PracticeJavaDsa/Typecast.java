@@ -1,3 +1,5 @@
+package PracticeJavaDsa;
+
 public class Typecast {
     public static void main(String[] args) {
      //   int num = (int)(34.56f);

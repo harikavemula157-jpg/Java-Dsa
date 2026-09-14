@@ -1,24 +1,35 @@
+package PracticeJavaDsa;
+
 import java.util.ArrayList;
-public class TwoSumBrute{
+import java.util.HashMap;
+public class TwoSumHashmap {
     static ArrayList<ArrayList<Integer>> twoSum(
             int[] arr, int target) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] + arr[j] == target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : arr) {
+            int needed = target - num;
+            if (map.containsKey(needed)) {
+                int frequency = map.get(needed);
+                for (int i = 0; i < frequency; i++) {
                     ArrayList<Integer> pair = new ArrayList<>();
-                    pair.add(arr[i]);
-                    pair.add(arr[j]);
+                    pair.add(needed);
+                    pair.add(num);
                     result.add(pair);
                 }
             }
+
+            map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
         return result;
     }
+
     public static void main(String[] args) {
+
         int[] arr = {2, 7, 11, -2, 4, 5};
         int target = 9;
+
         System.out.println(twoSum(arr, target));
     }
 }
